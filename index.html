@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>P.D. Edgar — Teaching Portfolio</title>
+<meta name="description" content="Teaching portfolio for P.D. Edgar: syllabus, policies, schedule, and signature assignments for Digital Storytelling for Creative Writers, with an interactive grading calculator." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Teaching Portfolio &middot; Interdisciplinary Teaching, Summer 2026</p>
+    <div class="masthead-row">
+      <div>
+        <h1>P.D. Edgar</h1>
+        <p class="credentials">MFA Creative Writing &nbsp;&middot;&nbsp; M.A. Journalism &amp; Media Studies</p>
+      </div>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle light and dark theme">
+        <span aria-hidden="true">&#9788;</span>/<span aria-hidden="true">&#9789;</span>
+      </button>
+    </div>
+    <nav class="masthead-nav" aria-label="Section navigation">
+      <a href="#syllabus">Syllabus</a>
+      <a href="#calculator">Grade Calculator</a>
+      <a href="#philosophy">Teaching Statement</a>
+      <a href="#previously-taught">Previously Taught</a>
+      <a href="#testimonials">Testimonials</a>
+    </nav>
+  </div>
+</header>
+
+<section class="course-banner">
+  <div class="course-banner-inner">
+    <p class="eyebrow">Sample Course</p>
+    <h2>Digital Storytelling for Creative Writers</h2>
+    <p class="course-codes">CRW 4760 &nbsp;+&nbsp; DIG 3171, Tools for Digital Humanities</p>
+    <dl class="course-meta">
+      <div><dt>Meets</dt><dd>MWF, 9:25&ndash;10:35 a.m.</dd></div>
+      <div><dt>Cap</dt><dd>20 students</dd></div>
+      <div><dt>Instructor</dt><dd>P.D. Edgar</dd></div>
+    </dl>
+  </div>
+</section>
+
+<main id="syllabus" class="layout">
+
+  <section class="syllabus-panel" aria-label="Syllabus">
+    <div class="tablist" role="tablist" aria-label="Syllabus sections">
+      <button role="tab" id="tab-overview" aria-controls="panel-overview" aria-selected="true" class="tab is-active">Overview</button>
+      <button role="tab" id="tab-policies" aria-controls="panel-policies" aria-selected="false" class="tab" tabindex="-1">Policies</button>
+      <button role="tab" id="tab-schedule" aria-controls="panel-schedule" aria-selected="false" class="tab" tabindex="-1">Schedule</button>
+      <button role="tab" id="tab-assignments" aria-controls="panel-assignments" aria-selected="false" class="tab" tabindex="-1">Assignments</button>
+    </div>
+
+    <!-- OVERVIEW -->
+    <div class="tabpanel" id="panel-overview" role="tabpanel" aria-labelledby="tab-overview">
+      <h3>Course Description</h3>
+      <p>A class that investigates the history of writing technologies by reading and engaging with those technologies one by one, from finger painting like the cave walls of Lascaux to Generative AI Chat. Students will connect the dots between the clay tablet and the desktop publisher, the copy machine and the Markov model, and the Choose-Your-Own-Adventure book and the Twitter Bot.</p>
+      <p>Along the way, students will be developing their own tastes for creative writing by several means. First, they will be reading crucial historical works of fiction, nonfiction, poetry, and criticism. Second, they will be writing original short stories, flash, and poetry themselves and reviewing each other&rsquo;s work. Third, they will reflect on the writing experience across technologies and curate a portfolio of their own writing and criticism into a small print/digital zine.</p>
+      <p>The goal of this class is to stimulate students&rsquo; interest in digital forms of creative writing, investigate the intricacies of the creative writing process from analog to print to digital, and invite them to articulate their creative tastes with a rich vocabulary stemming from extensive experience.</p>
+
+      <h3>Learning Objectives</h3>
+      <p class="lead-in">Students will:</p>
+      <ul class="check-list">
+        <li>summarize the history and describe the functions of various writing technologies</li>
+        <li>articulate and apply criteria for skilled creative writing craft to own and peer work</li>
+        <li>design and execute generative creative writing prompts and processes</li>
+        <li>experiment with and formulate literacies in distant reading, writing, and coding</li>
+        <li>generate a portfolio of original creative writing documents and experiments</li>
+      </ul>
+
+      <div class="two-col">
+        <div>
+          <h3>Materials</h3>
+          <ul>
+            <li>Computer access, pencil &amp; notebook; readings provided in print or digital</li>
+            <li>Access to Claude (free), Adobe Creative Cloud (free with student login), internet</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Late Work</h3>
+          <p>Late work is not accepted. Extensions may be granted on a case-by-case basis provided adequate advance communication.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- POLICIES -->
+    <div class="tabpanel is-hidden" id="panel-policies" role="tabpanel" aria-labelledby="tab-policies" hidden>
+      <h3>Class AI Policy</h3>
+      <p>Your personal development as a writer is of central concern in this course, regardless of the methods of composition we explore. As we expand the meaning of the words &ldquo;generative,&rdquo; &ldquo;reading,&rdquo; and &ldquo;writing,&rdquo; you will develop your personal tastes by tasting, your personal craft by crafting. I would like you to be critical of AI and invite you to seek ethical consistency between your use of AI and other digital practices. I also invite you to experiment and to change as you live according to your convictions.</p>
+      <p>In this course, we are tracing the lineage of text generation from the past to the very present day. As such, we will explore analog composition, mechanical and mathematic algorithms, and hypertext and digital algorithms. Many writing prompts will foreclose AI use; others will deliberately require the use of Claude and Claude Code. If you are opposed to such activity, you may discuss with me ways we can offset some of the impacts of AI to minimize harm.</p>
+
+      <h3>Process Notes</h3>
+      <p>With each writing assignment, we develop process notes to accompany them &mdash; especially thinking about reverse-engineering a poem, story, or essay for future writers. Early notes are reflective and subjective; more conceptual and procedural/technical compositions require descriptions of your decisions. Process notes have three sections:</p>
+      <ol class="process-steps">
+        <li><strong>Where / When &mdash;</strong> what prompted the piece, the setting</li>
+        <li><strong>What / How &mdash;</strong> the step-by-step exposition of the piece</li>
+        <li><strong>Reflection / Why &mdash;</strong> what you were getting at, the goals or concepts of the work</li>
+      </ol>
+      <p>You can be as deliberately dry or as creative as you like with these, but be specific about the technologies you&rsquo;re using, why, and the concept of the work as best you can.</p>
+
+      <h3>Hard Lines</h3>
+      <ul class="check-list">
+        <li>You will not ever feed a classmate&rsquo;s work to any LLM.</li>
+        <li>Traditional spell-check in Word or Google Docs is fine. If you allow Grammarly/Gemini/CoPilot to make sentence-level revisions, or check your work with an AI/LLM, you must submit both a pre-AI draft and a post-AI draft with the assignment.</li>
+      </ul>
+    </div>
+
+    <!-- SCHEDULE -->
+    <div class="tabpanel is-hidden" id="panel-schedule" role="tabpanel" aria-labelledby="tab-schedule" hidden>
+      <p class="panel-intro">Sixteen weeks, tracing writing technologies from the hand to the model. Each week expands below.</p>
+
+      <div class="unit">
+        <h3 class="unit-title">Unit I &mdash; Analog Foundations <span>Weeks 1&ndash;4</span></h3>
+
+        <details class="week" open>
+          <summary>Week 1 &mdash; Intro to Writing Technologies</summary>
+          <ul>
+            <li>Syllabus Day</li>
+            <li>Reading: &ldquo;<a href="https://blog.oup.com/2014/04/writing-as-technology/" target="_blank" rel="noopener">Writing as Technology</a>,&rdquo; Robert Eaglestone (<em>Very Short Introductions: Contemporary Fiction</em>)</li>
+            <li>Reading: &ldquo;The Four Temperaments,&rdquo; Gregory Orr</li>
+            <li>Prompt: write with a finger in grass, water, or mud; with chalk on pavement; then with pencil and paper &mdash; reflect on the differences as a poem, memoir, or fiction.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 2 &mdash; Letters, Numbers, Characters</summary>
+          <ul>
+            <li>Reading: <em>The Book of Letters</em> (Lawrence Kushner); selected Abecedarian poems</li>
+            <li>Reading: <em>Alphabet</em> (Inger Christensen); &ldquo;<a href="https://en.wikipedia.org/wiki/Star_Gauge" target="_blank" rel="noopener">Star Gauge</a>,&rdquo; Su Hui, <a href="https://www.davidhinton.net/su-hui-high-res" target="_blank" rel="noopener">trans. by David Hinton</a> (<a href="https://bombmagazine.org/articles/2017/03/15/xuanjitu/" target="_blank" rel="noopener"><em>BOMB</em></a>)</li>
+            <li>Prompt: by hand, write a flash piece structured by letters or numbers; rewrite it foregrounding a different Orr temperament.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 3 &mdash; Stylus, Inkbrush, Paper</summary>
+          <ul>
+            <li>Reading: <em>Phaedrus</em> (Plato) on the value of writing</li>
+            <li>Workshop: make paper by hand and set it to dry</li>
+            <li>Reading: <em>Olio</em> (Tyehimba Jess); <em>Nox</em> (Anne Carson)</li>
+            <li>Workshop: build an accordion book from the handmade paper</li>
+            <li>Prompt: write a haiku on handmade paper with pen and ink; compose a flash piece in the accordion book that changes meaning on the fold.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 4 &mdash; Type, Linocut, Typewriter</summary>
+          <ul>
+            <li>Reading: <em>FIRE!! A Journal of Younger Negro Poets</em> (intro to small presses)</li>
+            <li>Reading: <em>BLAST</em>, Issue 1 &mdash; a story, play, or woodblock print</li>
+            <li>Presentation: linocutting, stamping, typewriting</li>
+            <li>Prompt: circulate letterstamps and typewritten pieces; cut and print a linocut.</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="unit">
+        <h3 class="unit-title">Unit II &mdash; Image, Chance &amp; Hypertext <span>Weeks 5&ndash;8</span></h3>
+
+        <details class="week">
+          <summary>Week 5 &mdash; Image-Text</summary>
+          <ul>
+            <li>Reading: selected erasures (<em>RADI OS</em>, <em>Erase Genesis</em>); exercise: make erasures</li>
+            <li>Reading: <em>Calligrammes</em> (Apollinaire); <em>Ghost Of</em> (Diana Khoi Nguyen); exercise: write concrete poems</li>
+            <li>Reading: <em>Citizen</em> (Claudia Rankine)</li>
+            <li>Prompt: overwrite an image with a layer of text.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 6 &mdash; Early Computation</summary>
+          <ul>
+            <li>Reading: the <em>I Ching</em>; exercise: exquisite corpse drawings and poems; background: the Eureka / Latin Verse Machine</li>
+            <li>Reading: selections from <em>OUTPUT</em>; Christopher Strachey&rsquo;s love letters; exercise: the ELIZA experience</li>
+            <li>Reading: <em>Taroko Gorge</em>; <em>Travesty Generator</em></li>
+            <li>Prompt: run the cut-up method.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 7 &mdash; Garden of Forking Paths <span class="tag">Wiki Essay begins</span></summary>
+          <ul>
+            <li>Reading: &ldquo;The Garden of Forking Paths&rdquo; (Borges); <em>Choose Your Own Adventure</em> #1</li>
+            <li>Exercise: introduce the Wiki Assignment; set up GitHub accounts and Pages</li>
+            <li>Reading: &ldquo;<a href="https://www.newmediareader.com/book_samples/nmr-21-nelson.pdf" target="_blank" rel="noopener">From Computer Lib / Dream Machines</a>&rdquo; &mdash; Ted Nelson and the Xanadu Project</li>
+            <li>Exercise: select public-domain poems and map index-card links between chosen words</li>
+            <li>Reading: excerpt, <a href="https://westtrain.org/" target="_blank" rel="noopener"><em>WEST TRAIN</em></a> (Paisley Rekdal)</li>
+            <li>Prompt: flesh out flash/poetry pieces tied to the chosen link-words, ready for Monday.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 8 &mdash; Twine</summary>
+          <ul>
+            <li>Viewing: Chris Klimas keynote, ELO 2024; intro to Twine</li>
+            <li>Reading: student-chosen Twine games</li>
+            <li>Prompt: convert the Wiki piece into a Twine story and publish it to GitHub.</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="unit">
+        <h3 class="unit-title">Unit III &mdash; Procedural &amp; Playable Text <span>Weeks 9&ndash;11</span></h3>
+
+        <details class="week">
+          <summary>Week 9 &mdash; Mad Libs</summary>
+          <ul>
+            <li>Reading: selections from <em>OUTPUT</em>; <em>A Hundred Thousand Billion Poems</em> (Queneau); exercise: Mad Libs</li>
+            <li>Reading: Tracery introduction; Bluebots &ldquo;Done Quick&rdquo; start guide</li>
+            <li>Reading: Leonardo Flores, &ldquo;Bluebot Tiny Protests&rdquo;</li>
+            <li>Prompt: build a Bluesky bot from a custom Tracery grammar.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 10 &mdash; Code Poetics</summary>
+          <ul>
+            <li>Reading: selections from <em>Game Poems</em></li>
+            <li>Reading: analog code selections, Ensemble Park / <em>MQR</em></li>
+            <li>Reading: code poetry selections, Re&bull;mediate</li>
+            <li>Prompt: write a critical review of one piece &mdash; how does its process note change your reading?</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 11 &mdash; Bitsy</summary>
+          <ul>
+            <li>Build a Bitsy game world from an earlier piece; expand it across the week with dialogue and interactive items</li>
+            <li>Reading: <em>The Well-Played Game</em> (selections, Fullerton &amp; Farber)</li>
+            <li>Prompt: write a critical review of a game played in class.</li>
+          </ul>
+        </details>
+      </div>
+
+      <div class="unit">
+        <h3 class="unit-title">Unit IV &mdash; AI &amp; Synthesis <span>Weeks 12&ndash;16</span></h3>
+
+        <details class="week">
+          <summary>Week 12 &mdash; What Is AI? <span class="tag">Zine project begins</span></summary>
+          <ul>
+            <li>Reading: <em>Artificial Intelligence: A Guide for Thinking Humans</em> (Melanie Mitchell, selections); <a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi" target="_blank" rel="noopener">Overview of a neural network</a> by 3Blue1Brown</li>
+            <li>Reading: translation selection, <em>AI Literary Review</em></li>
+            <li>Prompt: write an original creative-writing prompt, complete it yourself, then complete it once via LLM &mdash; compare what succeeds and what fails.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 13 &mdash; AI Images</summary>
+          <ul>
+            <li>Exercise: the &ldquo;MORE X&rdquo; experiment; intro to data centers, content management, Submittable</li>
+            <li>Reading: calls for submissions on ChillSubs; draft your own call</li>
+            <li>Reading: <em>AI Literary Review</em> selections; selections of asemic writing</li>
+            <li>Prompt: generate a text-image with an image model on a small/older tool; read it aloud.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 14 &mdash; AI &amp; Code</summary>
+          <ul>
+            <li>Open studio week: applying LLM- and code-assisted composition to in-progress zine material.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 15 &mdash; Zine Workshopping</summary>
+          <ul>
+            <li>Full-class workshop of in-progress chapbooks: concept, sequencing, and process notes.</li>
+          </ul>
+        </details>
+
+        <details class="week">
+          <summary>Week 16 &mdash; Zine Presentations &amp; Reading</summary>
+          <ul>
+            <li>M / W / F: student reader sign-ups (7 / 7 / 6 students)</li>
+            <li>Prompt: complete end-of-semester SOIs.</li>
+          </ul>
+        </details>
+      </div>
+    </div>
+
+    <!-- ASSIGNMENTS -->
+    <div class="tabpanel is-hidden" id="panel-assignments" role="tabpanel" aria-labelledby="tab-assignments" hidden>
+
+      <h3>GitHub Wiki-Essay <span class="tag">Week 7&ndash;8</span></h3>
+      <p>Students find a public-domain sonnet (10&ndash;15 lines) to work with or against, highlight ten or more words in it, and define each in their own words. Over the following days they freewrite short micros (6&ndash;200 words) titled with each chosen word, then initialize a GitHub repository, upload a Twine build, and use Claude Code to build an interface in which clicking a word in the source poem reveals its micro &mdash; weighing interaction, color, size, randomness, presentation, overlap, and timing along the way. A 250-word process note closes the assignment, reflecting on the relationship between the source poem and the micros, and on working with Claude Code.</p>
+      <p class="note">Rationale: the assignment is built to get students fluent in Twine, GitHub, and Claude Code together, in service of the course&rsquo;s first objective &mdash; before turning, in later units, to the question of what AI changes and what it doesn&rsquo;t.</p>
+      <p><a class="jump-link" href="#calculator">Track this assignment&rsquo;s checklist in the calculator &rarr;</a></p>
+
+      <h3>Signature Assignment &mdash; Chapbook / Zine <span class="tag">Weeks 12&ndash;16</span></h3>
+      <p>Across the semester students draft pieces by hand, with analog algorithms, with computers, and with advanced computer algorithms &mdash; while developing their own taste in creative writing. The signature assignment asks them to curate a Chapbook or Zine: primarily their own work, optionally including classmates&rsquo; work with reflection, composed over several weeks into a printable, print-digital artifact and presented to the class.</p>
+
+      <div class="chain" aria-hidden="true">
+        <div class="chain-row">
+          <span>Concept</span><span>Call</span><span>Collect</span><span>Curate</span><span>Critique</span><span>Compose</span><span>Composite</span><span>Convey</span>
+        </div>
+        <div class="chain-row chain-row--sub">
+          <span>Vision</span><span>Criteria</span><span>Fullness</span><span>Cohesion</span><span>Clarity</span><span>Structure</span><span>Print</span><span>Present</span>
+        </div>
+      </div>
+
+      <p>As one example of the general concept, I share the Potluck Zine created by participants in the Text Kitchen Workshop in 2026, as well as some issues of Re&bull;mediate lit mag (<a href="https://remediatelitmag.xyz/issue0" target="_blank" rel="noopener">0</a>, <a href="https://remediatelitmag.xyz/issue1" target="_blank" rel="noopener">1</a>, <a href="https://remediatelitmag.xyz/issue2" target="_blank" rel="noopener">2</a>, <a href="https://remediatelitmag.xyz/issue3" target="_blank" rel="noopener">3</a>, <a href="https://remediatelitmag.xyz/issue4" target="_blank" rel="noopener">4</a>, <a href="https://remediatelitmag.xyz/issue5" target="_blank" rel="noopener">5</a>), <a href="https://www.ensemblepark.com/issues/ensemble_park_1.pdf" target="_blank" rel="noopener">Ensemble</a> <a href="https://www.ensemblepark.com/issues/ensemble_park_2.pdf" target="_blank" rel="noopener">Park</a>, and a range of chapbooks from my personal collection.</p>
+
+      <p class="lead-in">Format requirements:</p>
+      <ul class="check-list">
+        <li>At least 16 pages at 4.25&times;5.5 in. (eight or more 8.5&times;11 sheets folded in half)</li>
+        <li>Two cover pages, one table of contents, 10+ pages of written work spanning a range of writing technologies</li>
+        <li>Stapled, saddle-stitched, or stab-bound</li>
+        <li>At least one-fifth of the zine given to a first-person process note referencing 3+ readings (a closing essay, per-page footnotes, or endnotes)</li>
+        <li>Extra credit: up to 4 pages featuring a classmate&rsquo;s work with an editor&rsquo;s note and attribution</li>
+        <li>Not more than a quarter of the written work may be unedited AI output; process notes must reflect on AI use</li>
+      </ul>
+
+      <p><a class="jump-link" href="#calculator">Score a draft against the rubric &rarr;</a></p>
+    </div>
+
+  </section>
+
+  <aside id="calculator" class="tool-panel" aria-label="Interactive grading tool">
+    <div class="tool-inner">
+      <p class="tool-kicker">In the spirit of the grade-tracking spreadsheet I&rsquo;ve handed out each semester for five years &mdash; now built into the page.</p>
+
+      <div class="tool-switch" role="tablist" aria-label="Choose assignment">
+        <button role="tab" id="tool-tab-zine" aria-controls="tool-panel-zine" aria-selected="true" class="tool-tab is-active">Zine Rubric</button>
+        <button role="tab" id="tool-tab-wiki" aria-controls="tool-panel-wiki" aria-selected="false" class="tool-tab" tabindex="-1">Wiki-Essay Checklist</button>
+      </div>
+
+      <!-- ZINE RUBRIC -->
+      <div class="tool-panel-body" id="tool-panel-zine" role="tabpanel" aria-labelledby="tool-tab-zine">
+        <div class="score-display">
+          <div class="score-number">
+            <span id="zine-score">0</span><span class="score-unit">%</span>
+          </div>
+          <div class="score-side">
+            <span id="zine-letter" class="score-letter">&mdash;</span>
+            <span class="score-label">estimated grade</span>
+          </div>
+        </div>
+        <div class="score-split">
+          <div><span class="split-label">Completion</span><span id="zine-completion">0</span><span class="split-max">/70</span></div>
+          <div><span class="split-label">Quality</span><span id="zine-quality">0</span><span class="split-max">/30</span></div>
+        </div>
+
+        <ol id="zine-criteria" class="criteria-list"></ol>
+
+        <button id="zine-reset" class="reset-btn" type="button">Reset rubric</button>
+      </div>
+
+      <!-- WIKI CHECKLIST -->
+      <div class="tool-panel-body is-hidden" id="tool-panel-wiki" role="tabpanel" aria-labelledby="tool-tab-wiki" hidden>
+        <div class="score-display">
+          <div class="score-number">
+            <span id="wiki-score">0</span><span class="score-unit">%</span>
+          </div>
+          <div class="score-side">
+            <span id="wiki-count" class="score-letter">0 / 6</span>
+            <span class="score-label">requirements met</span>
+          </div>
+        </div>
+
+        <ul id="wiki-checklist" class="wiki-list"></ul>
+
+        <button id="wiki-reset" class="reset-btn" type="button">Reset checklist</button>
+      </div>
+    </div>
+  </aside>
+
+</main>
+
+<section id="philosophy" class="philosophy-band">
+  <div class="philosophy-inner">
+    <p class="eyebrow">Teaching Statement</p>
+    <h2>Teaching Philosophy</h2>
+    <p class="byline">Peter &ldquo;P.D.&rdquo; Edgar</p>
+
+    <blockquote class="pull-quote">
+      &ldquo;Composition is a design process &mdash; whether such composition be of a speech, an essay, a research paper, a poem, a social media presence, or a magazine.&rdquo;
+    </blockquote>
+
+    <div class="philosophy-text">
+      <p class="drop-cap">As a digital humanities scholar and teacher of media production, I begin every semester by thinking about how embedded my students already are in practices and habits of making and consuming media and language. I teach to bring my students towards a constant, embodied awareness of the world around them, and towards skilled communication design. As an interdisciplinarian, my classroom assumes and brings to bear that &ldquo;composition&rdquo; is a design process, whether such composition be of a speech, an essay, a research paper, a poem, a social media presence, or a magazine. In the age of AI, my students may be expected to arrive to syllabus day with a familiarity with any number of digital tools, including their use, to varying degrees of media literacy. At the same time, media hype encourages us to offload the design process in favor of efficiency and the deliverable. The humanities and social sciences I teach strike a non-neutral position and strive to return to my students the values of intentional, skilled composition. I want them to leave the final exam period with a care for visible and explainable ethics, skills, methods, and arts that are life-giving instead of extractive, crafted rather than cookie-cutter.</p>
+
+      <p>Whether I&rsquo;m in a Composition, Creative Writing, Public Speaking, or New Media classroom, my goal is to develop the following discernments in writers: awareness of medium and audience, attention to Gregory Orr&rsquo;s four temperaments (story, structure, music, and imagination), and a concern for well-sourced, well-said communication. There are four strands to the rope I invite my students to pull as they climb through their curriculum towards graduation.</p>
+
+      <ol class="strand-list">
+        <li>I source historic and critical readings and conduct handwritten reading quizzes in class.</li>
+        <li>My approach to class discussion is dialogic. At previous institutions, I couldn&rsquo;t always count on desks being movable, or technology access being standard between different buildings. What was consistent in all classrooms, though, was a whiteboard. It became a central part of my practice that as students respond to questions and converse about the readings together, I keep notes of their comments on the board to illustrate in real time how many ideas we&rsquo;re developing together in conversation. At the end of class, I photograph and upload those comments to the class portal. In a virtual setting, I can use collaborative workspaces like Miro and Tapestries to a similar effect [a]synchronously.</li>
+        <li>In keeping with engaged learning, research-creation, and critical making principles that emphasize learning by doing, I conduct in-class workshops and exercises that put readings into practice. For example, I translate a reading of Jorge Luis Borges&rsquo; conceptual fiction &ldquo;The Garden of Forking Paths&rdquo; into an index-card &ldquo;choose your own adventure&rdquo; story exercise, which my students digitize in-class into hypertext stories with Twine. Hands-on print-making and zine-copying familiarize my students, whose lives are already very digital, with the material literacies of their ancestors. At the same time, encouraging my students to read deeply and critique familiar media defamiliarizes technologies we all take for granted, creating critical literacies in print, digital, and new media deeper than that of the average user.</li>
+        <li>I believe strongly that while my role as an instructor is to foster new ways of thinking in my students, it&rsquo;s my students&rsquo; responsibility to cultivate their personal tastes in response to the things they&rsquo;re exposed to and learn to articulate them. I incorporate students&rsquo; reflections into what I evaluate during their aesthetic and technical projects, as well as into reading quizzes. Because of the prevalence of technologies that can skirt the portals and AI blockers, I ask for specific, personal narrative reflections on concepts in the book, as well as book-provided definitions for terms: two ways of engaging with material that take just as much work with AI as consulting the book to execute effectively. Three assessment measures (execution, intention, connection) are built into the syllabus and assignment rubrics as well as into peer review. Under an assessment framework that balances universal design with labor-based grading, completion of a deliverable is the baseline expectation. In peer review discussions, students center noticing, question curiously, and explicitly connect their suggestions to reasons grounded in their own tastes or understanding of &ldquo;the rules.&rdquo; Self-reflection and process statements raise a grade from passing to average, and my evaluation of the connection between the execution (quality of material) and the intention (process statements) rounds out a student&rsquo;s grade.</li>
+      </ol>
+
+      <p>As an aside, I want the ball to stay in my students&rsquo; court as much as possible, but to keep an &ldquo;open door&rdquo; policy even if it&rsquo;s a virtual one. As a lifelong student, I understand the frustration students get when expectations seem unclear, and I value curious and clarifying questions over executing my lesson plan to the minute. I create and provide descriptive rubrics and assignment sheets well in advance, and for the past five years I&rsquo;ve provided a virtual spreadsheet template at the beginning of the semester with which students can plug in their grades over the course of the semester and track their progress. Transparency and clear interpersonal communication about the guidelines for the class (including a stringent late policy), including mandatory conferences, help me develop a cordial professional relationship with my students. For the past couple years, when I&rsquo;m teaching an online section of a speech class, I have created multiple access points for my students: video lectures, an accessible textbook, hand-written summaries, and reading quizzes drawn directly from the book chapters.</p>
+    </div>
+  </div>
+</section>
+
+<section id="previously-taught" class="courses-band">
+  <div class="courses-inner split-layout">
+    <div class="courses-col">
+      <p class="eyebrow">Course History</p>
+      <h2>Previously Taught</h2>
+
+      <div class="course-grid">
+        <article class="course-card">
+          <h3>101 &middot; Narrative Writing <span class="tag">2&times; taught</span></h3>
+          <p class="course-focus">Memoir &middot; Profile &middot; Evaluation &middot; Persuasive Essays</p>
+          <p class="course-integrated">Integrated: eyewitness interviews, multi-genre projects &mdash; final ballot-amendment proposal.</p>
+        </article>
+
+        <article class="course-card">
+          <h3>102 &middot; Researched Writing</h3>
+          <p class="course-focus">Research Questions &middot; Annotated Bibliography &middot; Research Essays</p>
+          <p class="course-integrated">Integrated: peer-review stages, expert interviews.</p>
+        </article>
+
+        <article class="course-card">
+          <h3>103 &middot; Honors Composition <span class="tag">Writing About Crisis</span></h3>
+          <p class="course-focus">Memoir &middot; Profile &middot; Persuasive &middot; Bibliography &middot; Research Essays</p>
+          <p class="course-integrated">Integrated: eyewitness/expert interviews, &ldquo;Crisis of the Week&rdquo; presentations, final presentations.</p>
+        </article>
+
+        <article class="course-card">
+          <h3>200 &middot; Intro to Creative Writing</h3>
+          <p class="course-focus">Poetry &middot; Short Fiction &middot; Short Nonfiction</p>
+          <p class="course-integrated">Units on plot, world-building, and character.</p>
+        </article>
+
+        <article class="course-card">
+          <h3>305 &middot; Creative Nonfiction Workshop</h3>
+          <p class="course-focus">Short Essays &middot; Profiles &middot; Braided Essays &middot; Nonfiction Poems &middot; Experimental/Visual Narratives</p>
+          <p class="course-integrated">Two workshops per student.</p>
+        </article>
+
+        <article class="course-card">
+          <h3>Speech For Success <span class="tag">2&times; taught</span></h3>
+          <p class="course-focus">Introduction &middot; Toast &middot; Pecha Kucha &middot; Persuasive</p>
+          <p class="course-integrated">Virtual class taught with video lectures and Zoom recordings.</p>
+        </article>
+      </div>
+
+      <div class="talks-block">
+        <h3>Talks &amp; Workshops</h3>
+        <ul class="talks-list">
+          <li><strong>Alabama Scholastic Press Association</strong> (&times;2) &mdash; &ldquo;How to Run a Lit Mag Your Community Reads&rdquo;</li>
+          <li><strong>UCF Digital Cultures Research Group</strong>, Day of DH 2024 &mdash; &ldquo;Poetry Contest: Social Media Fandom and Celebrity Poems, Poets, &amp; Poetry&rdquo;</li>
+          <li>Guest lectures in creative writing classes &mdash; &ldquo;Inventing Poetic Forms&rdquo;; &ldquo;Intro to Concrete &amp; Visual Poetry&rdquo;</li>
+          <li>Organizer &mdash; <em>InDesign and the Creative Writer</em>, a 3-day intensive workshop</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="testimonials" class="testimonials-col">
+      <p class="eyebrow">Course Evaluations</p>
+      <h2>What Students Say</h2>
+
+      <div class="testimonial-grid">
+        <blockquote class="testimonial-card">
+          <p>&ldquo;Very nice instructor, would recommend him to lower-level writers to improve their writing.&rdquo;</p>
+          <cite class="tag">EN 101</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>&ldquo;So easy to reach!&rdquo;</p>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>&ldquo;10/10!!! Super good at keeping us engaged, every assignment had some purpose.&rdquo;</p>
+          <cite class="tag">EN 102</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>&ldquo;I always knew what to expect from him when completing assignments. I really liked his transparency.&rdquo;</p>
+          <cite class="tag">EN 103</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>&ldquo;He was caring, enthusiastic, and very passionate about what he taught. He was also very accommodating&hellip;&rdquo;</p>
+          <cite class="tag">EN 305</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>&ldquo;It was evident that he enjoyed teaching, spending time with, and getting to know his students.&rdquo;</p>
+          <cite class="tag">EN 200</cite>
+        </blockquote>
+        <blockquote class="testimonial-card">
+          <p>&ldquo;Effective, well read, engaging, respectful.&rdquo;</p>
+          <cite class="tag">EN 305</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>P.D. Edgar &middot; Teaching Portfolio &middot; Content drawn directly from the <em>Digital Storytelling for Creative Writers</em> syllabus and signature assignment.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
