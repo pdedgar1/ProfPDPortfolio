@@ -24,13 +24,12 @@
         <span aria-hidden="true">&#9788;</span>/<span aria-hidden="true">&#9789;</span>
       </button>
     </div>
-    <nav class="masthead-nav" aria-label="Section navigation">
-      <a href="#syllabus">Syllabus</a>
-      <a href="#calculator">Grade Calculator</a>
-      <a href="#philosophy">Teaching Statement</a>
-      <a href="#previously-taught">Previously Taught</a>
-      <a href="#testimonials">Testimonials</a>
-    </nav>
+    <div class="page-tabs" role="tablist" aria-label="Page sections">
+      <button role="tab" id="page-tab-syllabus" aria-controls="page-panel-syllabus" aria-selected="true" class="page-tab is-active">Syllabus</button>
+      <button role="tab" id="page-tab-calculator" aria-controls="page-panel-calculator" aria-selected="false" class="page-tab" tabindex="-1">Grade Calculator</button>
+      <button role="tab" id="page-tab-philosophy" aria-controls="page-panel-philosophy" aria-selected="false" class="page-tab" tabindex="-1">Teaching Statement</button>
+      <button role="tab" id="page-tab-courses" aria-controls="page-panel-courses" aria-selected="false" class="page-tab" tabindex="-1">Previously Taught</button>
+    </div>
   </div>
 </header>
 
@@ -47,7 +46,8 @@
   </div>
 </section>
 
-<main id="syllabus" class="layout">
+<main id="page-panel-syllabus" class="page-panel" role="tabpanel" aria-labelledby="page-tab-syllabus">
+  <div class="page-panel-inner">
 
   <section class="syllabus-panel" aria-label="Syllabus">
     <div class="tablist" role="tablist" aria-label="Syllabus sections">
@@ -289,7 +289,7 @@
       <h3>GitHub Wiki-Essay <span class="tag">Week 7&ndash;8</span></h3>
       <p>Students find a public-domain sonnet (10&ndash;15 lines) to work with or against, highlight ten or more words in it, and define each in their own words. Over the following days they freewrite short micros (6&ndash;200 words) titled with each chosen word, then initialize a GitHub repository, upload a Twine build, and use Claude Code to build an interface in which clicking a word in the source poem reveals its micro &mdash; weighing interaction, color, size, randomness, presentation, overlap, and timing along the way. A 250-word process note closes the assignment, reflecting on the relationship between the source poem and the micros, and on working with Claude Code.</p>
       <p class="note">Rationale: the assignment is built to get students fluent in Twine, GitHub, and Claude Code together, in service of the course&rsquo;s first objective &mdash; before turning, in later units, to the question of what AI changes and what it doesn&rsquo;t.</p>
-      <p><a class="jump-link" href="#calculator">Track this assignment&rsquo;s checklist in the calculator &rarr;</a></p>
+      <p><a class="jump-link" href="#page-panel-calculator" data-goto-tab="page-tab-calculator">Track this assignment&rsquo;s checklist in the calculator &rarr;</a></p>
 
       <h3>Signature Assignment &mdash; Chapbook / Zine <span class="tag">Weeks 12&ndash;16</span></h3>
       <p>Across the semester students draft pieces by hand, with analog algorithms, with computers, and with advanced computer algorithms &mdash; while developing their own taste in creative writing. The signature assignment asks them to curate a Chapbook or Zine: primarily their own work, optionally including classmates&rsquo; work with reflection, composed over several weeks into a printable, print-digital artifact and presented to the class.</p>
@@ -315,13 +315,19 @@
         <li>Not more than a quarter of the written work may be unedited AI output; process notes must reflect on AI use</li>
       </ul>
 
-      <p><a class="jump-link" href="#calculator">Score a draft against the rubric &rarr;</a></p>
+      <p><a class="jump-link" href="#page-panel-calculator" data-goto-tab="page-tab-calculator">Score a draft against the rubric &rarr;</a></p>
     </div>
 
   </section>
+  </div>
+</main>
 
+<section id="page-panel-calculator" class="page-panel is-hidden" role="tabpanel" aria-labelledby="page-tab-calculator" hidden>
+  <div class="page-panel-inner">
   <aside id="calculator" class="tool-panel" aria-label="Interactive grading tool">
     <div class="tool-inner">
+      <p class="eyebrow">Signature Assignment</p>
+      <h2>Grade Calculator</h2>
       <p class="tool-kicker">In the spirit of the grade-tracking spreadsheet I&rsquo;ve handed out each semester for five years &mdash; now built into the page.</p>
 
       <div class="tool-switch" role="tablist" aria-label="Choose assignment">
@@ -368,10 +374,10 @@
       </div>
     </div>
   </aside>
+  </div>
+</section>
 
-</main>
-
-<section id="philosophy" class="philosophy-band">
+<section id="page-panel-philosophy" class="page-panel is-hidden philosophy-band" role="tabpanel" aria-labelledby="page-tab-philosophy" hidden>
   <div class="philosophy-inner">
     <p class="eyebrow">Teaching Statement</p>
     <h2>Teaching Philosophy</h2>
@@ -398,7 +404,7 @@
   </div>
 </section>
 
-<section id="previously-taught" class="courses-band">
+<section id="page-panel-courses" class="page-panel is-hidden courses-band" role="tabpanel" aria-labelledby="page-tab-courses" hidden>
   <div class="courses-inner split-layout">
     <div class="courses-col">
       <p class="eyebrow">Course History</p>

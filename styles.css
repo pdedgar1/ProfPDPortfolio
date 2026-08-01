@@ -157,17 +157,28 @@ a { color: var(--accent); }
 }
 .theme-toggle:hover { border-color: var(--accent); color: var(--accent); }
 
-.masthead-nav {
+.page-tabs {
   margin-top: 1.5rem;
   display: flex;
   gap: 1.75rem;
+  flex-wrap: wrap;
+  font-family: var(--font-sans);
+}
+.page-tab {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: var(--ink-soft);
   font-family: var(--font-sans);
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  padding: 0 0 2px;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
 }
-.masthead-nav a { color: var(--ink-soft); text-decoration: none; border-bottom: 1px solid transparent; padding-bottom: 2px; }
-.masthead-nav a:hover { color: var(--accent); border-color: var(--accent); }
+.page-tab:hover { color: var(--accent); border-color: var(--accent); }
+.page-tab.is-active { color: var(--accent); border-color: var(--accent); font-weight: 600; }
 
 /* ---------- Course banner ---------- */
 
@@ -220,20 +231,15 @@ a { color: var(--accent); }
 }
 .course-meta dd { margin: 0; font-size: 0.95rem; color: var(--ink); }
 
-/* ---------- Layout ---------- */
+/* ---------- Page-level toggle panels ---------- */
 
-.layout {
+.page-panel.is-hidden,
+.page-panel[hidden] { display: none; }
+
+.page-panel-inner {
   max-width: 74rem;
   margin: 0 auto;
   padding: 2.5rem 2rem 3rem;
-  display: grid;
-  grid-template-columns: minmax(0, 1.65fr) minmax(19rem, 1fr);
-  gap: 2.5rem;
-  align-items: start;
-}
-
-@media (max-width: 60rem) {
-  .layout { grid-template-columns: 1fr; }
 }
 
 /* ---------- Tabs ---------- */
@@ -446,18 +452,22 @@ details.week li { color: var(--ink-soft); font-size: 0.97rem; }
   letter-spacing: 0;
 }
 
-/* ---------- Tool panel (sidebar) ---------- */
+/* ---------- Tool panel (Grade Calculator) ---------- */
 
 .tool-panel {
-  position: sticky;
-  top: 1.5rem;
+  max-width: 40rem;
+  margin: 0 auto;
   background: var(--paper-raised);
   border: 1px solid var(--rule);
   border-radius: 6px;
-  align-self: start;
 }
 
-.tool-inner { padding: 1.5rem; }
+.tool-inner { padding: 2rem 2.25rem; }
+
+.tool-inner h2 {
+  font-size: clamp(1.5rem, 3vw, 1.9rem);
+  margin: 0 0 1rem;
+}
 
 .tool-kicker {
   font-family: var(--font-sans);

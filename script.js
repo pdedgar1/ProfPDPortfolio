@@ -52,6 +52,27 @@
     return document.getElementById(btn.getAttribute('aria-controls'));
   });
 
+  var pageTabs = Array.prototype.slice.call(
+    document.querySelectorAll('.page-tabs .page-tab')
+  );
+  wireTabs(pageTabs, function (btn) {
+    return document.getElementById(btn.getAttribute('aria-controls'));
+  });
+  pageTabs.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var banner = document.querySelector('.course-banner');
+      if (banner) banner.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+
+  document.querySelectorAll('[data-goto-tab]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+      e.preventDefault();
+      var target = document.getElementById(el.dataset.gotoTab);
+      if (target) target.click();
+    });
+  });
+
   /* ---------------- Zine rubric (real weights from the signature assignment) ---------------- */
 
   var zineRubric = [
