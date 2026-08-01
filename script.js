@@ -154,8 +154,8 @@
   }
   function colorFor(value) {
     if (value < 34) return 'var(--ink-faint)';
-    if (value > 66) return 'var(--good)';
-    return 'var(--grade)';
+    if (value > 66) return 'var(--accent)';
+    return 'var(--mark)';
   }
 
   var criteriaList = document.getElementById('zine-criteria');
