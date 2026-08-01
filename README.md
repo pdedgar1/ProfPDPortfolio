@@ -1,2 +1,2 @@
 # ProfPDPortfolio
-A Teaching Portfiolio with a Sample Class by PD Edgar
+A Teaching Portfolio with a Sample Class by PD Edgar
